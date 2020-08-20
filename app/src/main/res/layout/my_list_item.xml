@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvloc"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_marginLeft="2dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@drawable/txtframe"
+        android:layout_height="34dp"/>
+
+
+    <TextView
+        android:id="@+id/tvbait"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="@drawable/txtframe"
+        android:layout_weight="1"
+        android:layout_height="34dp"/>
+
+    <TextView
+        android:id="@+id/tvspec"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:layout_marginRight="2dp"
+        android:layout_width="0dp"
+        android:background="@drawable/txtframe"
+        android:layout_height="34dp" />
+</LinearLayout>

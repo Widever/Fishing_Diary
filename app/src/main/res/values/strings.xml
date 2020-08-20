@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Fishing Diary</string>
+
+    <string-array name="time">
+        <item>З 4:00 до 8:00</item>
+        <item>З 8:00 до 12:00</item>
+        <item>З 12:00 до 16:00</item>
+        <item>З 16:00 до 20:00</item>
+        <item>З 20:00 до 00:00</item>
+        <item>З 00:00 до 4:00</item>
+    </string-array>
+
+    <string-array name="weather">
+        <item>Ясно</item>
+        <item>Хмарно</item>
+        <item>Дощ</item>
+    </string-array>
+
+    <string-array name="depth">
+        <item>Глибоко</item>
+        <item>Мілко</item>
+        <item>Середня глибина</item>
+    </string-array>
+
+    <string-array name="species">
+        <item>Щука</item>
+        <item>Карп</item>
+        <item>Карась</item>
+        <item>Сом</item>
+        <item>Лящ</item>
+        <item>Линок</item>
+        <item>Жерех</item>
+        <item>Окунь</item>
+    </string-array>
+
+    <string-array name="stat">
+        <item>Погода</item>
+        <item>Глибина</item>
+        <item>Час доби</item>
+    </string-array>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_mylocations"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_location"
+        android:title="My locations">
+    </item>
+
+    <item
+        android:id="@+id/menu_mybaits"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_bait"
+        android:title="My baits">
+    </item>
+
+    <item
+        android:id="@+id/menu_myrecords"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_book"
+        android:title="All records">
+    </item>
+
+
+</menu>

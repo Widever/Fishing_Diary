@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+
+    <ListView
+        android:id="@+id/lvRes"
+        android:layout_width="0dp"
+        android:layout_height="202dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnstat"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:text="статистика"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvRes"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <Spinner
+        android:id="@+id/statparam"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:entries="@array/stat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnstat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvRes"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/tvcount"
+        android:background="@drawable/roundrec"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/statparam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvRes"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart"
+        android:layout_width="0dp"
+        android:layout_height="326dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statparam"
+        app:layout_constraintVertical_bias="0.26">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="8dp"
+        android:text="К-ть записів:"
+        app:layout_constraintBottom_toTopOf="@+id/tvcount"
+        app:layout_constraintEnd_toEndOf="@+id/tvcount"
+        app:layout_constraintStart_toStartOf="@+id/tvcount"
+        app:layout_constraintTop_toBottomOf="@+id/lvRes" />
+
+    <TextView
+        android:id="@+id/txtParam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="8dp"
+        android:text="Параметр"
+        app:layout_constraintBottom_toTopOf="@+id/tvcount"
+        app:layout_constraintEnd_toEndOf="@+id/statparam"
+        app:layout_constraintStart_toStartOf="@+id/statparam"
+        app:layout_constraintTop_toBottomOf="@+id/lvRes" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@drawable/solidrec"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/txtParam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvRes"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/spinner_border"
+        app:layout_constraintBottom_toBottomOf="@+id/statparam"
+        app:layout_constraintEnd_toEndOf="@+id/statparam"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/statparam"
+        app:layout_constraintTop_toTopOf="@+id/statparam" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
